@@ -1,4 +1,4 @@
-##################### Extra Hard Starting Project ######################
+
 # Imports
 import pandas
 import smtplib
