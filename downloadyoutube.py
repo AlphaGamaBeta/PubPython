@@ -1,7 +1,7 @@
 from pytube import YouTube
+#This version give you the ability to only download highest quality and mp4 extension only 
 
-
-def download_1080p_mp4_videos(url: str):
+def download_mp4_video(url: str):
     yt = YouTube(url)
     y=yt.streams.filter(file_extension="mp4")
     y=y.get_highest_resolution()
@@ -9,7 +9,7 @@ def download_1080p_mp4_videos(url: str):
 
 url=input("Input the url: ")
 try:
-    download_1080p_mp4_videos(url=url)
+    download_mp4_video(url=url)
 except:
     raise Exception("Check the url")
 
